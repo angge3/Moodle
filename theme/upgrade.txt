@@ -1,0 +1,20 @@
+This files describes API changes in /theme/* themes,
+information provided here is intended especially for theme designer.
+
+=== 2.4 ===
+
+optional changes:
+* new optional boolean parameter $withlinks for public function login_info() in lib/outputrenderers.php (MDL-31365)
+* new layout option "nologinlinks" and new page layout "secure" e.g. for safebrowser and securewindow (MDL-31365)
+
+=== 2.3 ===
+
+optional changes:
+* add new u/f3.png image when theme contains customised f1 and f2 default user images
+
+=== 2.2 ===
+
+required changes:
+* use new page content placeholder "echo $OUTPUT->main_content()" instead of "echo core_renderer::MAIN_CONTENT_TOKEN"
+  see git commit: 3b3f302855d7621405a8b93e49bd399d67a998d7
+* upgrade report selectors: search for "-course-report-" and replace with "-report-"
